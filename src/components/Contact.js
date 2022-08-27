@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Resume from "../assets/document/Curriculum Vitae Ahmad Nurdiansah.pdf";
+import ScrollTop from "./ScrollTop";
 
 const Contact = () => {
   return (
@@ -44,6 +45,7 @@ const Contact = () => {
             </li>
           </div>
         </div>
+        <ScrollTop />
       </div>
     </div>
   );
