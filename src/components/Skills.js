@@ -7,7 +7,7 @@ import react from "../assets/react.png";
 import boostrap from "../assets/boostrap.png";
 import tailwind from "../assets/tailwind.png";
 import redux from "../assets/redux.png";
-import github from "../assets/github.png";
+import git from "../assets/git.png";
 
 const Skills = () => {
   return (
@@ -51,8 +51,8 @@ const Skills = () => {
             <p className="my-4 uppercase">redux</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={github} alt="Github icon" />
-            <p className="my-4 uppercase">github</p>
+            <img className="w-20 mx-auto" src={git} alt="Git icon" />
+            <p className="my-4 uppercase">git</p>
           </div>
         </div>
       </div>
