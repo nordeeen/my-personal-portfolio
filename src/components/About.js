@@ -1,4 +1,5 @@
 import React from "react";
+import myPhoto from "../assets/my-photo.jpeg";
 
 const About = () => {
   return (
@@ -13,9 +14,16 @@ const About = () => {
           <div></div>
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
-          <div className="sm:text-right text-4xl font-bold">
-            <p>Hi. I'm Ahmad Nurdiansah,</p>
-            <p>nice to meet you.</p>
+          <div className="flex justify-center align-center">
+            <img
+              src={myPhoto}
+              alt="myphoto"
+              style={{
+                maxWidth: "60%",
+                objectFit: "cover",
+                borderRadius: "4px",
+              }}
+            />
           </div>
           <div>
             <p className="text-center">
