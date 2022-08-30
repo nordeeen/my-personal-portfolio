@@ -26,11 +26,11 @@ const About = () => {
             />
           </div>
           <div>
-            <p className="text-center">
-              👋 I'm is Front-End Developer with hands-on and throught
-              experience in Javascript framework like ReactJS and understanding
-              important concepts like Fecthing API, State Management,
-              RestfulAPI, etc.
+            <p className="text-left">
+              👋 I'm Ahmad Nurdiansah. I'm is Frontend Developer with hands-on
+              and throught experience in Javascript framework like ReactJS and
+              understanding important concepts like Fecthing API, State
+              Management, RestfulAPI, etc.
             </p>
           </div>
         </div>
