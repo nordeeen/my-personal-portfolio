@@ -26,12 +26,12 @@ const Work = () => {
                 React JS Application
               </span>
               <div className="pt-8 text-center">
-                <a href="/">
+                <a href="/" target="_blank" rel="noopener noreferrer">
                   <button className="text-center rounded-lg px-4 py-3 bg-white text-gray-700 font-bold text-lg mr-2">
                     Demo
                   </button>
                 </a>
-                <a href="/">
+                <a href="/" target="_blank" rel="noopener noreferrer">
                   <button className="text-center rounded-lg px-4 py-3 bg-white text-gray-700 font-bold text-lg">
                     Code
                   </button>
@@ -50,12 +50,12 @@ const Work = () => {
                 React JS Application
               </span>
               <div className="pt-8 text-center">
-                <a href="/">
+                <a href="/" target="_blank" rel="noopener noreferrer">
                   <button className="text-center rounded-lg px-4 py-3 bg-white text-gray-700 font-bold text-lg mr-2">
                     Demo
                   </button>
                 </a>
-                <a href="/">
+                <a href="/" target="_blank" rel="noopener noreferrer">
                   <button className="text-center rounded-lg px-4 py-3 bg-white text-gray-700 font-bold text-lg">
                     Code
                   </button>
@@ -74,12 +74,12 @@ const Work = () => {
                 React JS Application
               </span>
               <div className="pt-8 text-center">
-                <a href="/">
+                <a href="/" target="_blank" rel="noopener noreferrer">
                   <button className="text-center rounded-lg px-4 py-3 bg-white text-gray-700 font-bold text-lg mr-2">
                     Demo
                   </button>
                 </a>
-                <a href="/">
+                <a href="/" target="_blank" rel="noopener noreferrer">
                   <button className="text-center rounded-lg px-4 py-3 bg-white text-gray-700 font-bold text-lg">
                     Code
                   </button>
