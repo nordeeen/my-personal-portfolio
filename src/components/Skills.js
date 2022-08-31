@@ -10,6 +10,49 @@ import redux from "../assets/redux.png";
 import git from "../assets/git.png";
 
 const Skills = () => {
+  const dataSkill = [
+    {
+      id: 1,
+      logo: html,
+      name: "html",
+    },
+    {
+      id: 2,
+      logo: css,
+      name: "css",
+    },
+    {
+      id: 3,
+      logo: javascript,
+      name: "javascript",
+    },
+    {
+      id: 4,
+      logo: react,
+      name: "react",
+    },
+    {
+      id: 5,
+      logo: boostrap,
+      name: "boostrap",
+    },
+    {
+      id: 6,
+      logo: tailwind,
+      name: "tailwindcss",
+    },
+    {
+      id: 7,
+      logo: redux,
+      name: "redux",
+    },
+    {
+      id: 8,
+      logo: git,
+      name: "git",
+    },
+  ];
+
   return (
     <div name="skills" className="w-full h-screen bg-[#0a192f] text-gray-300">
       {/* Container */}
@@ -20,40 +63,16 @@ const Skills = () => {
           </p>
           <p className="py-4">These are the technologies I've worked with</p>
         </div>
-
         <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={html} alt="HTML icon" />
-            <p className="my-4 uppercase">html</p>
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={css} alt="CSS icon" />
-            <p className="my-4 uppercase">css</p>
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={javascript} alt="JS icon" />
-            <p className="my-4 uppercase">javascript</p>
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={react} alt="React icon" />
-            <p className="my-4 uppercase">react</p>
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={tailwind} alt="Tailwind icon" />
-            <p className="my-4 uppercase">tailwind</p>
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={boostrap} alt="Boostrap icon" />
-            <p className="my-4 uppercase">boostrap</p>
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={redux} alt="Redux icon" />
-            <p className="my-4 uppercase">redux</p>
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={git} alt="Git icon" />
-            <p className="my-4 uppercase">git</p>
-          </div>
+          {dataSkill.map((item) => (
+            <div
+              key={item.id}
+              className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+            >
+              <img className="w-20 mx-auto" src={item.logo} alt="HTML icon" />
+              <p className="my-4 uppercase">{item.name}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
