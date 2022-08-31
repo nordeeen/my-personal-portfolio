@@ -23,7 +23,13 @@ const Contact = () => {
           </div>
           <div className="flex justify-around">
             <li className="bg-[#565f69] w-[80px] h-[80px] rounded-sm list-none p-4 hover:scale-110  duration-500">
-              <a className="text-gray-300" href={Resume} download>
+              <a
+                className="text-gray-300"
+                target="_blank"
+                rel="noopener noreferrer"
+                href={Resume}
+                download
+              >
                 <BsFillPersonLinesFill size={30} />
                 <p className="text-[13px]">Resume</p>
               </a>
@@ -32,13 +38,20 @@ const Contact = () => {
               <a
                 className="text-gray-300"
                 href="https://www.linkedin.com/in/ahmadnurdiansah/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaLinkedin size={30} />
                 <p className="text-[13px]">Linkedin</p>
               </a>
             </li>
             <li className="bg-[#333333] h-[80px] rounded-sm list-none p-4 hover:scale-110  duration-500">
-              <a className="text-gray-300" href="https://github.com/nordeeen/">
+              <a
+                className="text-gray-300"
+                href="https://github.com/nordeeen/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaGithub size={30} />
                 <p className="text-[13px]">Github</p>
               </a>
