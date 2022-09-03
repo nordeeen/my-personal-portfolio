@@ -17,22 +17,6 @@ const Award = () => {
     },
     {
       id: 2,
-      photo: Dicoding,
-      title: "Dicoding",
-      description: "Basic Web Programming",
-      skill: "HTML, CSS & Javascript",
-      year: "June 2020",
-    },
-    {
-      id: 3,
-      photo: Dicoding,
-      title: "Dicoding",
-      description: "Fundamental Frontend Web Development",
-      skill: "HTML, CSS, JS & PWA",
-      year: "June 2020",
-    },
-    {
-      id: 4,
       photo: Progate,
       title: "Progate",
       description: "Frontend Web Development",
@@ -40,7 +24,7 @@ const Award = () => {
       year: "August 2020",
     },
     {
-      id: 5,
+      id: 3,
       photo: Udemy,
       title: "Udemy",
       description: " React JS Complete Bootcamp",
@@ -48,7 +32,7 @@ const Award = () => {
       year: "May 2022",
     },
     {
-      id: 6,
+      id: 4,
       photo: Progate,
       title: "Progate & Dewaweb",
       description: "Instructor Coding",
