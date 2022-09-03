@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "../assets/link.png";
 import Progate from "../assets/progate-logo.png";
-import Dicoding from "../assets/dicoding-logo.png";
 import Udemy from "../assets/udemy-logo.png";
 
 const Award = () => {
