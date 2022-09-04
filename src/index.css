@@ -14,13 +14,13 @@
   }
 }
 
-@layer utilities {
+/* @layer utilities {
   .navbar-content {
     height: 5rem;
     padding-right: 16px;
     padding-left: 16px;
   }
-}
+} */
 
 .content-div {
   background-repeat: no-repeat;
