@@ -74,6 +74,7 @@ const Award = () => {
               {datas.map((data) => {
                 return (
                   <div
+                    data-aos="fade-up-right"
                     key={data.id}
                     className="flex flex-col items-center bg-[#0a192f] rounded-lg border md:flex-row md:max-w-xl shadow-[#040c16] mb-4 shadow-md border-[#0a192f]"
                   >

@@ -14,7 +14,10 @@ const About = () => {
           <div></div>
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
-          <div className="flex justify-center align-center">
+          <div
+            data-aos="fade-right"
+            className="flex justify-center align-center"
+          >
             <img
               src={myPhoto}
               alt="myphoto"
@@ -26,7 +29,7 @@ const About = () => {
             />
           </div>
           <div>
-            <p className="text-left">
+            <p data-aos="fade-up" className="text-left">
               👋 I'm Ahmad Nurdiansah. I'm is Frontend Developer with hands-on
               and throught experience in Javascript framework like ReactJS and
               understanding important concepts like Fecthing API, State
