@@ -68,6 +68,8 @@ const Skills = () => {
           <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
             {dataSkill.map((item) => (
               <div
+                data-aos="zoom-in"
+                data-aos-duratin="500"
                 key={item.id}
                 className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
               >

@@ -22,7 +22,11 @@ const Contact = () => {
             <p>Jakarta Utara 14230</p>
           </div>
           <div className="flex justify-around">
-            <li className="bg-[#565f69] w-[80px] h-[80px] rounded-sm list-none p-4 hover:scale-110  duration-500">
+            <li
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+              className="bg-[#565f69] w-[80px] h-[80px] rounded-sm list-none p-4 hover:scale-110  duration-500"
+            >
               <a
                 className="text-gray-300"
                 target="_blank"
@@ -34,7 +38,11 @@ const Contact = () => {
                 <p className="text-[13px]">Resume</p>
               </a>
             </li>
-            <li className="bg-blue-600 h-[80px] rounded-sm list-none p-4 hover:scale-110  duration-500">
+            <li
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+              className="bg-blue-600 h-[80px] rounded-sm list-none p-4 hover:scale-110  duration-500"
+            >
               <a
                 className="text-gray-300"
                 href="https://www.linkedin.com/in/ahmadnurdiansah/"
@@ -45,7 +53,11 @@ const Contact = () => {
                 <p className="text-[13px]">Linkedin</p>
               </a>
             </li>
-            <li className="bg-[#333333] h-[80px] rounded-sm list-none p-4 hover:scale-110  duration-500">
+            <li
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+              className="bg-[#333333] h-[80px] rounded-sm list-none p-4 hover:scale-110 duration-500"
+            >
               <a
                 className="text-gray-300"
                 href="https://github.com/nordeeen/"

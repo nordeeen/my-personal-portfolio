@@ -16,6 +16,7 @@ const About = () => {
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
           <div
             data-aos="fade-right"
+            data-aos-duration="1500"
             className="flex justify-center align-center"
           >
             <img
