@@ -13,12 +13,12 @@ const Navbar = () => {
   return (
     <>
       <div className="fixed w-full flex justify-between items-center bg-[#0a192f] text-gray-300 z-50 navbar-content">
-        <div>
+        <div className="ml-3">
           <img src={mylogo} alt="Logo Images" style={{ width: "75px" }} />
         </div>
 
         {/* Menu */}
-        <ul className="hidden md:flex">
+        <ul className="hidden md:flex pr-10">
           <li>
             <Link to="home" smooth={true} duration={500}>
               Home
@@ -47,7 +47,7 @@ const Navbar = () => {
         </ul>
 
         {/* Hamburger Menu */}
-        <div onClick={handleClick} className="md:hidden z-10">
+        <div onClick={handleClick} className="md:hidden z-10 mr-7">
           {!nav ? <FaBars /> : <FaTimes />}
         </div>
 
