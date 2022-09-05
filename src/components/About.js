@@ -1,5 +1,6 @@
 import React from "react";
 import myPhoto from "../assets/my-photo.jpeg";
+import CodersLife from "../assets/coders-life.jpg";
 
 const About = () => {
   return (
@@ -36,6 +37,13 @@ const About = () => {
               understanding important concepts like Fecthing API, State
               Management, RestfulAPI, etc.
             </p>
+            <div className="py-4 px-1">
+              <img
+                className="w-[100%] h-[100%] object-cover"
+                src={CodersLife}
+                alt="Coders-Life"
+              />
+            </div>
           </div>
         </div>
       </div>
