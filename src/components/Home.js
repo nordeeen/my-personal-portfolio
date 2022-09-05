@@ -12,13 +12,11 @@ const Home = () => {
           Ahmad Nurdiansah
         </h1>
         <h2 className="text-4xl sm:text-7xl font-bold text-[#8896b0]">
-          I'm a Frontend Developer.
+          I'm a <span className="animate-character">Frontend Developer</span>
         </h2>
-        <p className="text-[#8892b0] py-4 max-w-[700px]">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nam
-          voluptatibus dolore, impedit possimus in non illo neque velit nemo
-          maxime labore odio quia id ullam exercitationem, repellendus itaque
-          aut!
+        <p className="text-[#8892b0] py-4 max-w-[800px]">
+          A Frontend Developer passionate about creating interactive
+          applications and experiences on the web.
         </p>
         <div>
           <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600">
