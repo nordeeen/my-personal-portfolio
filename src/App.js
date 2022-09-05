@@ -14,7 +14,7 @@ import Footer from "./components/Footer";
 
 function App() {
   useEffect(() => {
-    AOS.init();
+    AOS.init({ disable: "mobile" });
     AOS.refresh();
   }, []);
 
