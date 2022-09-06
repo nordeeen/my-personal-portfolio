@@ -15,8 +15,8 @@ const ScrollTop = () => {
       >
         <img
           src={scrollTop}
-          alt="scrollTop-logo"
           className="bg-[#0a192f]"
+          alt="scrollTop-logo"
           style={{ width: "60px" }}
         />
       </button>
