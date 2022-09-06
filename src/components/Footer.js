@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="px-16">
             <img style={{ width: "75px" }} src={Logo} alt="logo" />
           </div>
-          <h2 className="text-xs text-gray-300 font-bold">
+          <h2 className="text-xs text-center text-gray-300 font-bold">
             Copyright &copy; Ahmad Nurdiansah
           </h2>
         </div>
