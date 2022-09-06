@@ -49,7 +49,7 @@ const Exprience = () => {
                     data-aos="flip-left"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="1500"
-                    className="max-w-2xl px-8 py-4 mx-auto bg-[#0a192f] shadow-[#040c16] border-[#0a192f]rounded-lg shadow-md dark:bg-gray-800 mb-6"
+                    className="max-w-2xl px-8 py-4 mx-auto bg-[#0a192f] shadow-[#040c16] border-[#0a192f]rounded-lg shadow-md dark:bg-[#0a192f] mb-6"
                     style={{ cursor: "auto" }}
                   >
                     <div className="flex items-center justify-between">
