@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import Resume from "../assets/document/CV_Ahmad Nurdiansah.pdf";
+import Resume from "../assets/document/CV Ahmad Nurdiansah.pdf";
 import ScrollTop from "./ScrollTop";
 
 const Contact = () => {
