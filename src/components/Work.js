@@ -1,7 +1,7 @@
 import React from "react";
 import foodOrder from "../assets/food-order.png";
 import natoursTravel from "../assets/natours-travel.png";
-import realEstate from "../assets/realestate.jpg";
+import eplWeb from "../assets/epl-web.png";
 
 const Work = () => {
   return (
@@ -18,7 +18,9 @@ const Work = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${foodOrder})` }}
+            style={{
+              backgroundImage: `url(${foodOrder})`,
+            }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
@@ -82,21 +84,32 @@ const Work = () => {
           </div>
 
           <div
-            style={{ backgroundImage: `url(${realEstate})` }}
+            style={{
+              backgroundImage: `url(${eplWeb})`,
+              backgroundPosition: "2% center",
+            }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
-                React JS Application
+                HTML JS MaterializeCSS
               </span>
               <div className="pt-8 text-center">
-                <a href="/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://gibol.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <button className="text-center rounded-lg px-4 py-3 bg-white text-gray-700 font-bold text-lg mr-2">
                     Demo
                   </button>
                 </a>
-                <a href="/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/nordeeen/Gibol-web-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <button className="text-center rounded-lg px-4 py-3 bg-white text-gray-700 font-bold text-lg">
                     Code
                   </button>
