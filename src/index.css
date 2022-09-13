@@ -53,6 +53,14 @@
   }
 }
 
+@layer utilities {
+  @media (max-width: 320px) {
+    .breakpoint {
+      display: none;
+    }
+  }
+}
+
 .content-div {
   background-repeat: no-repeat;
   background-size: cover;

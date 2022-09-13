@@ -37,7 +37,7 @@ const Exprience = () => {
         <div className="flex flex-col justify-center items-center w-full h-full">
           <div className="max-w-[1000px] mx-auto bg-[#0a192f] p-4 flex flex-col justify-center w-full h-full">
             <div className="mb-12">
-              <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
+              <p className="breakpoint text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
                 Experience
               </p>
             </div>
