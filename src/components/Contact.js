@@ -1,8 +1,10 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import Resume from "../assets/document/CV Ahmad Nurdiansah.pdf";
 import ScrollTop from "./ScrollTop";
+
+const urlResume =
+  "https://drive.google.com/uc?export=download&id=1ABP-VLyrPr6JQbAyYuBs6bLRhfIaQ-by";
 
 const Contact = () => {
   return (
@@ -27,13 +29,7 @@ const Contact = () => {
               data-aos-anchor-placement="bottom-bottom"
               className="bg-[#565f69] w-[80px] h-[80px] rounded-sm list-none p-4 hover:scale-110  duration-500"
             >
-              <a
-                className="text-gray-300"
-                target="_blank"
-                rel="noopener noreferrer"
-                href={Resume}
-                download
-              >
+              <a className="text-gray-300" href={urlResume}>
                 <BsFillPersonLinesFill size={30} />
                 <p className="text-[13px]">Resume</p>
               </a>
