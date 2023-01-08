@@ -4,6 +4,7 @@ import natoursTravel from "../assets/natours-travel.png";
 import eplWeb from '../assets/epl-web.png';
 import laslesVPN from '../assets/lp-laslesvpn.png';
 import userLogin from '../assets/users-login.png';
+import yukTravel from '../assets/yuktravel.png';
 import Project from "./Project";
 
 const projects = [
@@ -41,6 +42,13 @@ const projects = [
     imgBg: userLogin,
     linkPort: 'https://users-login-web.vercel.app/',
     linkGithub: 'https://github.com/nordeeen/Users-login-web',
+  },
+  {
+    id: 6,
+    title: 'Yuk Travel Web',
+    imgBg: yukTravel,
+    linkPort: 'https://web-travel-gules.vercel.app/',
+    linkGithub: 'https://github.com/nordeeen/Web-Travel',
   },
 ];
 
