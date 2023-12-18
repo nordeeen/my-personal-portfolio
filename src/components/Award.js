@@ -1,45 +1,8 @@
-import React from "react";
-import Link from "../assets/link.png";
-import Progate from "../assets/progate-logo.png";
-import Udemy from "../assets/udemy-logo.png";
+import React from 'react';
+import Link from '../assets/link.png';
+import { allDataWords, datasListAwards } from '../const';
 
 const Award = () => {
-  // datas
-  const datas = [
-    {
-      id: 1,
-      photo: Progate,
-      title: "Progate & DTS",
-      description: "Mentor Coding Experience Bootcamp",
-      skill: "HTML, CSS & Javascript",
-      year: "October 2020",
-    },
-    {
-      id: 2,
-      photo: Progate,
-      title: "Progate",
-      description: "Frontend Web Development",
-      skill: "HTML, CSS, JS & React JS",
-      year: "August 2020",
-    },
-    {
-      id: 3,
-      photo: Udemy,
-      title: "Udemy",
-      description: " React JS Complete Bootcamp",
-      skill: "Hooks, API, Router, Redux",
-      year: "May 2022",
-    },
-    {
-      id: 4,
-      photo: Progate,
-      title: "Progate & Dewaweb",
-      description: "Instructor Coding",
-      skill: "Javascript",
-      year: "March 2022",
-    },
-  ];
-
   // flex flex-col justify-center items-center w-full h-full
   return (
     <>
@@ -48,12 +11,12 @@ const Award = () => {
           <div className="max-w-[1000px] mx-auto bg-[#0a192f] p-4 flex flex-col justify-center w-full h-full">
             <div className="mb-3">
               <p className="breakpoint text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
-                Award
+                {allDataWords.titlesSecond}
               </p>
             </div>
             <a
               className="flex text-xl text-blue-600 underline font-semibold italic"
-              href="https://drive.google.com/drive/folders/1u2haQlTu7XO7Z456m_5RSId7jcK_itxg"
+              href={allDataWords.urlCertificate}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -61,17 +24,17 @@ const Award = () => {
                 src={Link}
                 alt="logo-link"
                 style={{
-                  width: "18px",
-                  height: "18px",
-                  objectFit: "cover",
-                  marginRight: "11px",
-                  marginTop: "5px",
+                  width: '18px',
+                  height: '18px',
+                  objectFit: 'cover',
+                  marginRight: '11px',
+                  marginTop: '5px',
                 }}
               />
               Certificate
             </a>
             <div className="mx-auto my-auto">
-              {datas.map((data) => {
+              {datasListAwards.map((data) => {
                 return (
                   <div
                     data-aos="fade-right"
@@ -93,8 +56,8 @@ const Award = () => {
                         {data.description}
                       </p>
                       <p className="mb-3 font-bold text-gray-300 ">
-                        {data.skill}{" "}
-                        <span className="text-pink-600">&#187;</span>{" "}
+                        {data.skill}{' '}
+                        <span className="text-pink-600">&#187;</span>{' '}
                         {data.year}
                       </p>
                     </div>

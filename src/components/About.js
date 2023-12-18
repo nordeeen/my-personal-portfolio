@@ -1,6 +1,8 @@
-import React from "react";
-import myPhoto from "../assets/my-photo.jpeg";
-import CodersLife from "../assets/coders-life.jpg";
+import React from 'react';
+import myFotoProfile from '../assets/foto-profile-portofolio.jpg';
+// import myPhoto from '../assets/my-photo.jpeg';
+import CodersLife from '../assets/coders-life.jpg';
+import { allDataWords } from '../const';
 
 const About = () => {
   return (
@@ -9,7 +11,7 @@ const About = () => {
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4 p-4">
             <p className="breakpoint text-4xl font-bold inline border-b-4 border-pink-600">
-              About Me
+              {allDataWords.titlesOne}
             </p>
           </div>
           <div></div>
@@ -21,21 +23,21 @@ const About = () => {
             className="flex justify-center align-center"
           >
             <img
-              src={myPhoto}
+              src={myFotoProfile}
               alt="myphoto"
               style={{
-                maxWidth: "60%",
-                objectFit: "cover",
-                borderRadius: "4px",
+                maxWidth: '60%',
+                objectFit: 'cover',
+                borderRadius: '4px',
+                // borderLeft: '4px solid rgb(219 39 119)',
+                // borderRight: '4px solid rgb(219 39 119)',
+                // border: '6px solid rgb(219 39 119)',
               }}
             />
           </div>
           <div>
             <p data-aos="fade-up" className="text-left">
-              👋 I'm Ahmad Nurdiansah. I'm is Frontend Developer with hands-on
-              and throught experience in Javascript framework like ReactJS and
-              understanding important concepts like Fecthing API, State
-              Management, RestfulAPI, etc.
+              {allDataWords.aboutMe}
             </p>
             <div className="py-4 px-1">
               <img

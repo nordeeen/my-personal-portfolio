@@ -1,10 +1,11 @@
-import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import ScrollTop from "./ScrollTop";
+import React from 'react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { allDataWords } from '../const';
+import ScrollTop from './ScrollTop';
 
-const urlResume =
-  "https://drive.google.com/uc?export=download&id=1ABP-VLyrPr6JQbAyYuBs6bLRhfIaQ-by";
+// const urlResume =
+//   "https://drive.google.com/uc?export=download&id=1ABP-VLyrPr6JQbAyYuBs6bLRhfIaQ-by";
 
 const Contact = () => {
   return (
@@ -13,15 +14,15 @@ const Contact = () => {
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
             <p className="breakpoint text-4xl font-bold inline border-b-4 border-pink-600">
-              Contact Me
+              {allDataWords.titleSix}
             </p>
           </div>
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
           <div className="sm:text-right text-xl font-bold">
-            <p>Jl. Bendungan Melayu</p>
-            <p>DKI Jakarta, Indonesia</p>
-            <p>Jakarta Utara 14230</p>
+            <p>{allDataWords.myAddress.slice(0, 20)}</p>
+            <p>{allDataWords.myAddress.slice(20, 43)}</p>
+            <p>{allDataWords.myAddress.slice(43, 63)}</p>
           </div>
           <div className="flex justify-around">
             <li
@@ -29,7 +30,7 @@ const Contact = () => {
               data-aos-anchor-placement="bottom-bottom"
               className="bg-[#565f69] w-[80px] h-[80px] rounded-sm list-none p-4 hover:scale-110  duration-500"
             >
-              <a className="text-gray-300" href={urlResume}>
+              <a className="text-gray-300" href={allDataWords.urlResume}>
                 <BsFillPersonLinesFill size={30} />
                 <p className="text-[13px]">Resume</p>
               </a>
@@ -41,7 +42,7 @@ const Contact = () => {
             >
               <a
                 className="text-gray-300"
-                href="https://www.linkedin.com/in/ahmadnurdiansah/"
+                href={allDataWords.urlLinkedin}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -56,7 +57,7 @@ const Contact = () => {
             >
               <a
                 className="text-gray-300"
-                href="https://github.com/nordeeen/"
+                href={allDataWords.urlGithub}
                 target="_blank"
                 rel="noopener noreferrer"
               >
