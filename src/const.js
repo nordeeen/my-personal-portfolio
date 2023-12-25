@@ -4,7 +4,6 @@ import html from './assets/html.png';
 import css from './assets/css.png';
 import javascript from './assets/javascript.png';
 import react from './assets/react.png';
-import boostrap from './assets/boostrap.png';
 import tailwind from './assets/tailwind.png';
 import redux from './assets/redux.png';
 import git from './assets/git.png';
@@ -31,10 +30,11 @@ export const allDataWords = {
   titleJob: 'Front End Developer',
   urlGithub: 'https://github.com/nordeeen/',
   urlLinkedin: 'https://www.linkedin.com/in/ahmadnurdiansah/',
-  urlCertificate: 'https://drive.google.com/drive/folders/1u2haQlTu7XO7Z456m_5RSId7jcK_itxg',
+  urlCertificate:
+    'https://drive.google.com/drive/folders/1u2haQlTu7XO7Z456m_5RSId7jcK_itxg',
   urlResume:
-    'https://drive.google.com/uc?export=download&id=1FxIjQH0NXR8L5YbtvJn9RCGgm6meNV6P',
-    // 'https://drive.google.com/uc?export=download&id=1ABP-VLyrPr6JQbAyYuBs6bLRhfIaQ-by',
+    'https://drive.google.com/uc?export=download&id=161192yU7Ax4jILSEh28MTKKcqg8pKlsP',
+  // 'https://drive.google.com/uc?export=download&id=1ABP-VLyrPr6JQbAyYuBs6bLRhfIaQ-by',
   descHome:
     'A Frontend Developer passionate about creating interactive applications and experiences on the web.',
   aboutMe: `
