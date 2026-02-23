@@ -1,9 +1,9 @@
-import React from 'react';
-import { datasListSkills, allDataWords } from '../const';
+import Image from "next/image";
+import { datasListSkills, allDataWords } from "@/lib/const";
 
-const Skills = () => {
+const Skills: React.FC = () => {
   return (
-    <div name="skills" className="w-full h-screen bg-[#0a192f] text-gray-300">
+    <div id="skills" className="w-full h-screen bg-[#0a192f] text-gray-300">
       {/* Container */}
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full mt-2">
@@ -19,11 +19,17 @@ const Skills = () => {
             {datasListSkills.map((item) => (
               <div
                 data-aos="zoom-in"
-                data-aos-duratin="500"
+                data-aos-duration="500"
                 key={item.id}
                 className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
               >
-                <img className="w-20 mx-auto" src={item.logo} alt="HTML icon" />
+                <Image
+                  className="w-20 mx-auto"
+                  src={item.logo}
+                  alt={`${item.name} icon`}
+                  width={80}
+                  height={80}
+                />
                 <p className="my-4 uppercase">{item.name}</p>
               </div>
             ))}

@@ -1,9 +1,7 @@
-import React from 'react';
-import Link from '../assets/link.png';
-import { allDataWords, datasListAwards } from '../const';
+import Image from "next/image";
+import { allDataWords, datasListAwards } from "@/lib/const";
 
-const Award = () => {
-  // flex flex-col justify-center items-center w-full h-full
+const Award: React.FC = () => {
   return (
     <>
       <section className="w-full h-full bg-[#0a192f] text-gray-300">
@@ -20,15 +18,17 @@ const Award = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src={Link}
+              <Image
+                src="/assets/link.png"
                 alt="logo-link"
+                width={18}
+                height={18}
                 style={{
-                  width: '18px',
-                  height: '18px',
-                  objectFit: 'cover',
-                  marginRight: '11px',
-                  marginTop: '5px',
+                  width: "18px",
+                  height: "18px",
+                  objectFit: "cover",
+                  marginRight: "11px",
+                  marginTop: "5px",
                 }}
               />
               Certificate
@@ -43,10 +43,12 @@ const Award = () => {
                     key={data.id}
                     className="flex flex-col items-center bg-[#0a192f] rounded-lg border md:flex-row md:max-w-xl shadow-[#040c16] mb-4 shadow-md border-[#0a192f]"
                   >
-                    <img
+                    <Image
                       className="object-cover w-full h-100 rounded-t-lg md:h-auto md:w-60 md:rounded-none md:rounded-l-lg px-4 py-2"
                       src={data.photo}
                       alt="logo"
+                      width={240}
+                      height={100}
                     />
                     <div className="flex flex-col justify-between p-4 leading-normal">
                       <h1 className="mb-2 text-2xl font-bold tracking-tight text-pink-600 dark:text-white">
@@ -56,8 +58,8 @@ const Award = () => {
                         {data.description}
                       </p>
                       <p className="mb-3 font-bold text-gray-300 ">
-                        {data.skill}{' '}
-                        <span className="text-pink-600">&#187;</span>{' '}
+                        {data.skill}{" "}
+                        <span className="text-pink-600">&raquo;</span>{" "}
                         {data.year}
                       </p>
                     </div>

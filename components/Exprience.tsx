@@ -1,7 +1,6 @@
-import React from 'react';
-import { datasListExp, allDataWords } from '../const';
+import { datasListExp, allDataWords } from "@/lib/const";
 
-const Exprience = () => {
+const Exprience: React.FC = () => {
   return (
     <>
       <section className="w-full h-full bg-[#0a192f] text-gray-300">
@@ -21,7 +20,7 @@ const Exprience = () => {
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="1500"
                     className="max-w-2xl px-8 py-4 mx-auto bg-[#0a192f] shadow-[#040c16] border-[#0a192f]rounded-lg shadow-md dark:bg-[#0a192f] mb-6"
-                    style={{ cursor: 'auto' }}
+                    style={{ cursor: "auto" }}
                   >
                     <div className="flex items-center justify-between">
                       <span className="text-sm font-light text-gray-300">

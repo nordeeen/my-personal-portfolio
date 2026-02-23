@@ -1,15 +1,13 @@
-import React from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { allDataWords } from '../const';
-import ScrollTop from './ScrollTop';
+"use client";
 
-// const urlResume =
-//   "https://drive.google.com/uc?export=download&id=1ABP-VLyrPr6JQbAyYuBs6bLRhfIaQ-by";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { BsFillPersonLinesFill } from "react-icons/bs";
+import { allDataWords } from "@/lib/const";
+import ScrollTop from "./ScrollTop";
 
-const Contact = () => {
+const Contact: React.FC = () => {
   return (
-    <div name="contact" className="w-full h-screen bg-[#0a192f] text-gray-300">
+    <div id="contact" className="w-full h-screen bg-[#0a192f] text-gray-300">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">

@@ -1,0 +1,28 @@
+﻿Ôû▓ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+Ô£ô Compiled successfully in 4.3s
+  Running TypeScript ...
+
+  We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+  	- target was set to ES2017 (For top-level `await`. Note: Next.js only polyfills for the esmodules target.)
+  	- include was updated to add '.next/dev/types/**/*.ts'
+
+  The following mandatory changes were made to your tsconfig.json:
+
+  	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+
+  Collecting page data using 3 workers ...
+  Generating static pages using 3 workers (0/3) ...
+Ô£ô Generating static pages using 3 workers (3/3) in 316.4ms
+  Finalizing page optimization ...
+
+Route (app)
+Ôöî Ôùï /
+Ôöö Ôùï /_not-found
+
+
+Ôùï  (Static)  prerendered as static content
+

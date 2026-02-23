@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+"use client";
+
+import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import mylogo from "../assets/mylogo.png";
+import Image from "next/image";
 import { Link } from "react-scroll";
 
-const Navbar = () => {
-  const [nav, setNav] = useState(false);
+const Navbar: React.FC = () => {
+  const [nav, setNav] = useState<boolean>(false);
 
   const handleClick = () => {
     setNav(!nav);
@@ -14,7 +16,13 @@ const Navbar = () => {
     <>
       <div className="fixed w-full flex justify-between items-center bg-[#0a192f] text-gray-300 z-50 navbar-content">
         <div className="ml-3">
-          <img src={mylogo} alt="Logo Images" style={{ width: "75px" }} />
+          <Image
+            src="/assets/mylogo.png"
+            alt="Logo Images"
+            width={75}
+            height={75}
+            style={{ width: "75px", height: "auto" }}
+          />
         </div>
 
         {/* Menu */}
@@ -65,7 +73,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="py-6 text-4xl">
-            <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+            <Link
+              onClick={handleClick}
+              to="about"
+              smooth={true}
+              duration={500}
+            >
               About
             </Link>
           </li>

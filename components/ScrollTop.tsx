@@ -1,7 +1,9 @@
-import React, { useEffect } from "react";
-import scrollTop from "../assets/scroll-top.png";
+"use client";
 
-const ScrollTop = () => {
+import { useEffect } from "react";
+import Image from "next/image";
+
+const ScrollTop: React.FC = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
@@ -13,11 +15,13 @@ const ScrollTop = () => {
           window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
         }}
       >
-        <img
-          src={scrollTop}
+        <Image
+          src="/assets/scroll-top.png"
           className="bg-[#0a192f]"
           alt="scrollTop-logo"
-          style={{ width: "60px" }}
+          width={60}
+          height={60}
+          style={{ width: "60px", height: "auto" }}
         />
       </button>
     </div>
