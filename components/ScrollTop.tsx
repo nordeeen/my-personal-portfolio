@@ -1,27 +1,35 @@
-"use client";
+'use client';
 
-import { useEffect } from "react";
-import Image from "next/image";
+import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 const ScrollTop: React.FC = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    const handleScroll = () => {
+      setIsVisible(window.scrollY > 300);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  if (!isVisible) return null;
+
   return (
-    <div className="mt-20">
+    <div className="fixed bottom-8 right-8 z-50">
       <button
-        onClick={() => {
-          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-        }}
+        onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}
+        aria-label="Scroll to top"
       >
         <Image
           src="/assets/scroll-top.png"
-          className="bg-[#0a192f]"
+          className=""
           alt="scrollTop-logo"
           width={60}
           height={60}
-          style={{ width: "60px", height: "auto" }}
+          style={{ width: '60px', height: 'auto' }}
         />
       </button>
     </div>

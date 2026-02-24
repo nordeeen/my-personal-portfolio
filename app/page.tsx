@@ -1,20 +1,21 @@
-"use client";
+'use client';
 
-import { useEffect } from "react";
-import AOS from "aos";
-import Navbar from "@/components/Navbar";
-import Home from "@/components/Home";
-import About from "@/components/About";
-import Skills from "@/components/Skills";
-import Award from "@/components/Award";
-import Work from "@/components/Work";
-import Exprience from "@/components/Exprience";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import Navbar from '@/components/Navbar';
+import Home from '@/components/Home';
+import About from '@/components/About';
+import Skills from '@/components/Skills';
+import Award from '@/components/Award';
+import Work from '@/components/Work';
+import Exprience from '@/components/Exprience';
+import Blogs from '@/components/Blogs';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
 
 export default function Page() {
   useEffect(() => {
-    AOS.init({ disable: "mobile" });
+    AOS.init({ disable: 'mobile' });
     AOS.refresh();
   }, []);
 
@@ -23,12 +24,13 @@ export default function Page() {
       <Navbar />
       <Home />
       <About />
-      <Award />
-      <Skills />
       <Exprience />
+      <Skills />
       <Work />
+      <Award />
+      <Blogs />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
