@@ -133,10 +133,8 @@ const Contact: React.FC = () => {
             </ul>
           </div>
         </div>
-
         {/* Divider */}
         <div className="w-full h-px bg-white/[0.05] my-12" />
-
         {/* Footer */}
         <p className="text-center text-xs text-slate-800">
           Built with <span className="text-pink-600">♥</span> by{' '}
@@ -144,9 +142,6 @@ const Contact: React.FC = () => {
         </p>
       </div>
       <ScrollTop />
-      // <ScrollTop />
-      {/* Scroll Top */}
-      // <div className="flex justify-center">// </div>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap');
       `}</style>

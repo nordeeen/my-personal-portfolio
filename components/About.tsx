@@ -83,7 +83,7 @@ const About: React.FC = () => {
               data-aos-delay="100"
             >
               {[
-                { number: '3+', label: 'Years Exp.' },
+                { number: '2+', label: 'Years Exp.' },
                 { number: '10+', label: 'Projects' },
                 { number: '5+', label: 'Tech Stack' },
               ].map((stat) => (
