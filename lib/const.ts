@@ -51,7 +51,7 @@ export const allDataWords = {
   urlCertificate:
     'https://drive.google.com/drive/folders/1u2haQlTu7XO7Z456m_5RSId7jcK_itxg',
   urlResume:
-    'https://drive.google.com/uc?export=download&id=15owKNzLe03EjCl3Fvz3aCJqLdgxbaYYC',
+    'https://drive.google.com/uc?export=download&id=1RISmeiIrVTiBn_PzP7fDefNPKpWOFUQ1',
   descHome:
     'A Frontend Developer passionate about creating interactive applications and experiences on the web.',
   aboutMe: `
@@ -61,7 +61,7 @@ export const allDataWords = {
      Management, RestfulAPI, etc.
 `,
 };
-// https://drive.google.com/file/d/15owKNzLe03EjCl3Fvz3aCJqLdgxbaYYC/view?usp=sharing
+
 export const datasListExp: ExperienceItem[] = [
   {
     id: 1,

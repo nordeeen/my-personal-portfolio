@@ -3,7 +3,10 @@ import { allDataWords, datasListAwards } from '@/lib/const';
 
 const Award: React.FC = () => {
   return (
-    <section className="w-full bg-[#071525] text-gray-300 overflow-hidden">
+    <section
+      id="awards"
+      className="w-full bg-[#071525] text-gray-300 overflow-hidden"
+    >
       <div className="max-w-5xl mx-auto px-6 py-24">
         <div className="flex items-center gap-3 mb-4">
           <div className="w-12 h-[3px] bg-pink-600 rounded-full flex-shrink-0" />

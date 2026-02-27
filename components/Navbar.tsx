@@ -9,7 +9,9 @@ const navLinks = [
   { label: 'Home', to: 'home' },
   { label: 'About', to: 'about' },
   { label: 'Skills', to: 'skills' },
-  { label: 'Project', to: 'work' },
+  { label: 'Projects', to: 'work' },
+  { label: 'Awards', to: 'awards' },
+  { label: 'Blogs', to: 'blogs' },
   { label: 'Contact', to: 'contact' },
 ];
 
@@ -62,6 +64,8 @@ const Navbar: React.FC = () => {
                   smooth
                   duration={600}
                   offset={-72}
+                  spy={true}
+                  activeClass="active-nav"
                   className="relative inline-block px-4 py-2 text-sm font-medium text-slate-400
                     rounded-lg cursor-pointer transition-all duration-200
                     hover:text-slate-100 hover:bg-white/5
@@ -108,6 +112,8 @@ const Navbar: React.FC = () => {
               smooth
               duration={600}
               offset={-72}
+              spy={true}
+              activeClass="active-nav-mobile"
               onClick={closeNav}
               className="text-2xl font-bold text-slate-500 cursor-pointer
                 px-8 py-2 transition-colors duration-200 hover:text-slate-100

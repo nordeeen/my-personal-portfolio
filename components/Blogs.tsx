@@ -6,7 +6,10 @@ const Blogs: React.FC = () => {
   const posts = getAllPosts();
 
   return (
-    <section className="w-full bg-[#0a192f] text-gray-300 overflow-hidden">
+    <section
+      id="blogs"
+      className="w-full bg-[#0a192f] text-gray-300 overflow-hidden"
+    >
       <div className="max-w-5xl mx-auto px-6 py-24">
         {/* Section Label */}
         <div className="flex items-center gap-3 mb-12">
