@@ -12,7 +12,7 @@ const Project: React.FC<ProjectProps> = ({
   github,
 }) => {
   return (
-    <div>
+    <div id="projects">
       <div
         style={{
           backgroundImage: `url(${img})`,

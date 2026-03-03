@@ -51,7 +51,7 @@ export const allDataWords = {
   urlCertificate:
     'https://drive.google.com/drive/folders/1u2haQlTu7XO7Z456m_5RSId7jcK_itxg',
   urlResume:
-    'https://drive.google.com/uc?export=download&id=1RISmeiIrVTiBn_PzP7fDefNPKpWOFUQ1',
+    'https://drive.google.com/uc?export=download&id=1wmKvXgJfU4L6_3_yW_bbhpoS5Bpmcflm',
   descHome:
     'A Frontend Developer passionate about creating interactive applications and experiences on the web.',
   aboutMe: `
@@ -61,7 +61,7 @@ export const allDataWords = {
      Management, RestfulAPI, etc.
 `,
 };
-
+// https://drive.google.com/file/d/1wmKvXgJfU4L6_3_yW_bbhpoS5Bpmcflm/view?usp=sharing
 export const datasListExp: ExperienceItem[] = [
   {
     id: 1,
@@ -74,8 +74,8 @@ export const datasListExp: ExperienceItem[] = [
   },
   {
     id: 2,
-    date: 'January 2024 - April 2024',
-    subjects: 'React.js, Javascript, Chakra UI, Redux Toolkit',
+    date: 'January 2023 - April 2024',
+    subjects: 'React.js, Javascript, Chakra UI, Redux Toolkit, Jest',
     title: 'Front-End Developer at Feedloop',
     description: `Writing and testing program code, Debugging and fixing errors in code and Collaborated with design & 
       Collaborated with design and back-end teams to implement user interfaces and integrate front-end code with back-end systems.`,
