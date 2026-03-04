@@ -4,9 +4,9 @@ import { BlogPost } from '@/model';
 export interface ExperienceItem {
   id: number;
   date: string;
-  subjects: string;
+  subjects: string[];
   title: string;
-  description: string;
+  description: string[];
 }
 
 export interface AwardItem {
@@ -52,51 +52,73 @@ export const allDataWords = {
     'https://drive.google.com/drive/folders/1u2haQlTu7XO7Z456m_5RSId7jcK_itxg',
   urlResume:
     'https://drive.google.com/uc?export=download&id=1wmKvXgJfU4L6_3_yW_bbhpoS5Bpmcflm',
-  descHome:
-    'A Frontend Developer passionate about creating interactive applications and experiences on the web.',
+  descHome: `A Frontend Developer passionate about crafting interactive, 
+  high-performance applications and seamless digital experiences on the web.`,
   aboutMe: `
-     👋 I'm Ahmad Nurdiansah. I'm a Frontend Developer with hands-on
-     and thorough experience in JavaScript frameworks like ReactJS, 
-     and understanding important concepts like Fetching API, State 
-     Management, RestfulAPI, etc.
-`,
+     👋 I'm Ahmad Nurdiansah, a Frontend Developer with 3+ years of hands-on experience building responsive and efficient web applications. I specialize in JavaScript frameworks such as ReactJS, Next.js, and Vue.js, with proficiency in TypeScript and Tailwind CSS. I have a solid understanding of key concepts including API fetching, state management, and RESTful API integration — focused on delivering clean, scalable, and user-friendly interfaces.
+    `,
 };
-// https://drive.google.com/file/d/1wmKvXgJfU4L6_3_yW_bbhpoS5Bpmcflm/view?usp=sharing
+
 export const datasListExp: ExperienceItem[] = [
   {
     id: 1,
     date: 'April 2024 - Present',
-    subjects:
-      'React.js, Next.js, Typescript, Tailwind CSS, Zustand, Tanstack Query',
-    title: 'Front-End Developer at PT Kreasindo Karya Abadi',
-    description: `Writing and testing program code, Debugging and fixing errors in code and Collaborated with design & 
-      Collaborated with design and back-end teams to implement user interfaces and integrate front-end code with back-end systems.`,
+    subjects: [
+      'React.js',
+      'Next.js',
+      'TypeScript',
+      'Tailwind CSS',
+      'Zustand',
+      'TanStack Query',
+    ],
+    title: 'Front-End Developer — PT Kreasindo Karya Abadi',
+    description: [
+      'Developed, tested, and maintained program code to ensure functionality, performance, and high code quality.',
+      'Identified, debugged, and resolved errors across the codebase to minimize downtime and improve system stability.',
+      'Fixed bugs reported by the QA team, reviewed QA notes, and ensured all issues were resolved before deployment.',
+      'Collaborated with UI/UX designers to implement pixel-perfect and responsive user interfaces.',
+      'Worked closely with back-end engineers to integrate APIs and ensure seamless data flow and user experience.',
+    ],
   },
   {
     id: 2,
     date: 'January 2023 - April 2024',
-    subjects: 'React.js, Javascript, Chakra UI, Redux Toolkit, Jest',
-    title: 'Front-End Developer at Feedloop',
-    description: `Writing and testing program code, Debugging and fixing errors in code and Collaborated with design & 
-      Collaborated with design and back-end teams to implement user interfaces and integrate front-end code with back-end systems.`,
+    subjects: ['React.js', 'JavaScript', 'Chakra UI', 'Redux Toolkit', 'Jest'],
+    title: 'Front-End Developer — Feedloop',
+    description: [
+      'Developed, tested, and maintained program code to ensure functionality, performance, and high code quality.',
+      'Identified, debugged, and resolved errors across the codebase to minimize downtime and improve system stability.',
+      'Fixed bugs reported by the QA team, reviewed QA notes, and ensured all issues were resolved before deployment.',
+      'Collaborated with UI/UX designers to implement pixel-perfect and responsive user interfaces.',
+      'Resolved bugs and implemented improvements based on code review feedback and notes from senior developers',
+      'Worked closely with back-end engineers to integrate APIs and ensure seamless data flow and user experience.',
+      'Reporting progress, blocking task and planning in daily/weekly meeting with the team',
+    ],
   },
   {
     id: 3,
-    date: ' March 2022 - March 2022',
-    subjects: 'Javascript Basics, Javascript (ES6)',
+    date: 'March 2022',
+    subjects: ['JavaScript Basics', 'JavaScript (ES6)'],
     title:
-      'Coding Instructor on the event 21-Days Bootcamp Javascript ( Progate & Dewaweb).',
-    description:
-      'Answer questions from participants, Review source code participants, help participants fix errors/bugs and Review projects from participants.',
+      'Coding Instructor — 21-Days JavaScript Bootcamp (Progate & Dewaweb)',
+    description: [
+      'Answered participants’ technical questions during the bootcamp.',
+      'Reviewed and provided feedback on participants’ source code.',
+      'Assisted participants in debugging and fixing errors.',
+      'Evaluated and reviewed final projects.',
+    ],
   },
   {
     id: 4,
     date: 'October 2020 - November 2020',
-    subjects: 'HTML, CSS, Scss, Javascript',
-    title:
-      'Coding Instructor on the event Program Ready Set Code! (Progate & Kominfo).',
-    description:
-      'Answer questions from participants, Review source code participants, help participants fix errors/bugs and Review projects from participants.',
+    subjects: ['HTML', 'CSS', 'SCSS', 'JavaScript'],
+    title: 'Coding Instructor — Ready Set Code! Program (Progate & Kominfo)',
+    description: [
+      'Answered participants’ questions related to HTML, CSS, and JavaScript.',
+      'Reviewed source code and provided constructive feedback.',
+      'Helped participants troubleshoot bugs and improve code quality.',
+      'Reviewed and evaluated participant projects.',
+    ],
   },
 ];
 

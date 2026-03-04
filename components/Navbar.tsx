@@ -10,7 +10,7 @@ const navLinks = [
   { label: 'About', to: 'about' },
   { label: 'Experiences', to: 'work' },
   { label: 'Skills', to: 'skills' },
-  { label: 'Projects', to: 'projects'},
+  { label: 'Projects', to: 'projects' },
   { label: 'Awards', to: 'awards' },
   { label: 'Blogs', to: 'blogs' },
   { label: 'Contact', to: 'contact' },
@@ -97,33 +97,50 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Overlay */}
       <div
-        className={`fixed inset-0 z-[99] flex flex-col items-center justify-center gap-2
-          bg-[rgba(10,25,47,0.98)] backdrop-blur-xl
-          transition-all duration-300
-          ${nav ? 'opacity-100 pointer-events-auto translate-y-0' : 'opacity-0 pointer-events-none -translate-y-2'}
-        `}
+        className={`fixed inset-0 z-[99]
+    bg-[rgba(10,25,47,0.98)] backdrop-blur-xl
+    transition-all duration-300
+    ${
+      nav
+        ? 'opacity-100 pointer-events-auto translate-y-0'
+        : 'opacity-0 pointer-events-none -translate-y-2'
+    }
+  `}
       >
-        {navLinks.map((link, i) => (
-          <div key={link.to} className="flex flex-col items-center">
-            {i > 0 && (
-              <div className="w-px h-8 my-1 bg-gradient-to-b from-transparent via-pink-600/40 to-transparent" />
-            )}
-            <Link
-              to={link.to}
-              smooth
-              duration={600}
-              offset={-72}
-              spy={true}
-              activeClass="active-nav-mobile"
-              onClick={closeNav}
-              className="text-2xl font-bold text-slate-500 cursor-pointer
-                px-8 py-2 transition-colors duration-200 hover:text-slate-100
-                tracking-wide"
+        <div className="flex flex-col items-center pt-28 pb-16 px-6 gap-2 overflow-y-auto h-full">
+          {navLinks.map((link, i) => (
+            <div
+              key={link.to}
+              className="flex flex-col items-center w-full max-w-xs"
             >
-              {link.label}
-            </Link>
-          </div>
-        ))}
+              {i > 0 && (
+                <div className="w-px h-6 my-2 bg-gradient-to-b from-transparent via-pink-600/40 to-transparent" />
+              )}
+
+              <Link
+                to={link.to}
+                smooth
+                duration={600}
+                offset={-72}
+                spy={true}
+                activeClass="active-nav-mobile"
+                onClick={closeNav}
+                className="
+            text-lg sm:text-xl
+            font-semibold
+            text-slate-400
+            cursor-pointer
+            px-6 py-2
+            transition-all duration-200
+            hover:text-slate-100
+            tracking-wide
+          "
+              >
+                {link.label}
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );

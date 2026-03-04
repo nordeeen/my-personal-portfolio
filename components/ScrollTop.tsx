@@ -29,7 +29,7 @@ const ScrollTop: React.FC = () => {
           alt="scrollTop-logo"
           width={60}
           height={60}
-          style={{ width: '60px', height: 'auto' }}
+          style={{ width: '40px', height: 'auto' }}
         />
       </button>
     </div>

@@ -2,7 +2,10 @@ import { datasListExp, allDataWords } from '@/lib/const';
 
 const Exprience: React.FC = () => {
   return (
-    <section id="work" className="w-full bg-[#0a192f] text-gray-300 overflow-hidden">
+    <section
+      id="work"
+      className="w-full bg-[#0a192f] text-gray-300 overflow-hidden"
+    >
       <div className="max-w-5xl mx-auto px-6 py-24">
         {/* Section Label */}
         <div className="flex items-center gap-3 mb-14">
@@ -57,33 +60,46 @@ const Exprience: React.FC = () => {
                   ].join(' ')}
                 >
                   {/* Top row */}
-                  <div className="flex items-center justify-between flex-wrap gap-2 mb-3">
+                  <div className="flex items-center justify-between flex-wrap gap-3 mb-3">
                     <span className="text-[13px] text-slate-500 tracking-[0.04em]">
                       {datas.date}
                     </span>
-                    <span
-                      className={[
-                        'px-3 py-1 rounded-full',
-                        'text-[11px] font-bold uppercase tracking-[0.06em] text-pink-600',
-                        'bg-pink-600/10 border border-pink-600/30',
-                      ].join(' ')}
-                    >
-                      {datas.subjects}
-                    </span>
+
+                    <div className="flex flex-wrap gap-2">
+                      {datas.subjects.map((subject) => (
+                        <span
+                          key={subject}
+                          className={[
+                            'px-3 py-1 rounded-full',
+                            'text-[11px] font-bold uppercase tracking-[0.06em] text-pink-600',
+                            'bg-pink-600/10 border border-pink-600/30',
+                          ].join(' ')}
+                        >
+                          {subject}
+                        </span>
+                      ))}
+                    </div>
                   </div>
 
                   {/* Title */}
                   <h3
-                    className="text-xl font-bold tracking-tight text-slate-200 mb-2.5"
+                    className="text-xl font-bold tracking-tight text-slate-200 mb-3"
                     style={{ fontFamily: "'Syne', sans-serif" }}
                   >
                     {datas.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-sm leading-relaxed text-slate-500">
-                    {datas.description}
-                  </p>
+                  <ul className="text-sm leading-relaxed text-slate-500 list-disc pl-5 space-y-1">
+                    {datas.description.map((desc, i) => (
+                      <li
+                        key={i}
+                        className="transition-colors duration-200 group-hover:text-slate-300"
+                      >
+                        {desc}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             ))}

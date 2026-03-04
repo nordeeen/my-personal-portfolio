@@ -68,7 +68,7 @@ const About: React.FC = () => {
           <div className="flex flex-col gap-6">
             {/* Description */}
             <p
-              className="text-base leading-[1.85] text-slate-500"
+              className="text-base leading-[1.85] text-slate-500 text-left w-full"
               data-aos="fade-up"
               data-aos-duration="1000"
             >
@@ -116,9 +116,11 @@ const About: React.FC = () => {
               {[
                 'React',
                 'Next.js',
+                'Vue.js',
                 'TypeScript',
                 'Node.js',
                 'Tailwind CSS',
+                'Tanstack Query',
               ].map((tag) => (
                 <span
                   key={tag}
