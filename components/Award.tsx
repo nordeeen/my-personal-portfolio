@@ -19,7 +19,7 @@ const Award: React.FC = () => {
         </div>
 
         {/* Certificate Link */}
-        <a
+        {/* <a
           href={allDataWords.urlCertificate}
           target="_blank"
           rel="noopener noreferrer"
@@ -40,7 +40,7 @@ const Award: React.FC = () => {
             style={{ width: '14px', height: '14px' }}
           />
           View All Certificates
-        </a>
+        </a> */}
 
         {/* Award List */}
         <div className="flex flex-col gap-4">
