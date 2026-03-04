@@ -48,8 +48,7 @@ export const allDataWords = {
   urlGithub: 'https://github.com/nordeeen/',
   urlLinkedin: 'https://www.linkedin.com/in/ahmadnurdiansah/',
   myEmail: 'ahmadnrdnsah@gmail.com',
-  urlCertificate:
-    'https://drive.google.com/drive/folders/1u2haQlTu7XO7Z456m_5RSId7jcK_itxg',
+  urlCertificate: `https://drive.google.com/embeddedfolderview?id=1u2haQlTu7XO7Z456m_5RSId7jcK_itxg#list`,
   urlResume:
     'https://drive.google.com/uc?export=download&id=1wmKvXgJfU4L6_3_yW_bbhpoS5Bpmcflm',
   descHome: `A Frontend Developer passionate about crafting interactive, 

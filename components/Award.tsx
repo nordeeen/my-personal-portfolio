@@ -17,12 +17,16 @@ const Award: React.FC = () => {
             {allDataWords.titlesSecond}
           </h2>
         </div>
-
         {/* Certificate Link */}
-        {/* <a
-          href={allDataWords.urlCertificate}
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          type="button"
+          onClick={() =>
+            window.open(
+              allDataWords.urlCertificate,
+              '_blank',
+              'noopener,noreferrer',
+            )
+          }
           className={[
             'inline-flex items-center gap-2 mb-10',
             'text-pink-600 text-[13px] font-semibold tracking-[0.05em] uppercase',
@@ -40,8 +44,7 @@ const Award: React.FC = () => {
             style={{ width: '14px', height: '14px' }}
           />
           View All Certificates
-        </a> */}
-
+        </button>
         {/* Award List */}
         <div className="flex flex-col gap-4">
           {datasListAwards.map((data, index) => (
