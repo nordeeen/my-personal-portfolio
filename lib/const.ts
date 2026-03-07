@@ -50,7 +50,7 @@ export const allDataWords = {
   myEmail: 'ahmadnrdnsah@gmail.com',
   urlCertificate: `https://drive.google.com/embeddedfolderview?id=1u2haQlTu7XO7Z456m_5RSId7jcK_itxg#list`,
   urlResume:
-    'https://drive.google.com/uc?export=download&id=1wmKvXgJfU4L6_3_yW_bbhpoS5Bpmcflm',
+    'https://drive.google.com/uc?export=download&id=1afJVceEkQo2DG1xVg1Ks2IP_oiYBXhBc',
   descHome: `A Frontend Developer passionate about crafting interactive, 
   high-performance applications and seamless digital experiences on the web.`,
   aboutMe: `
