@@ -255,20 +255,6 @@ export const datasListProjects: ProjectItem[] = [
       'Typescript',
     ],
   },
-  {
-    id: 8,
-    type: 'confidential',
-    title: 'Internal Dashboard',
-    imgBg: '/assets/dashboard-mbg.png',
-    techStack: [
-      'Next.js',
-      'Tanstack Query',
-      'Micro Frontend',
-      'Typescript',
-      'Tailwind',
-      'Zustand',
-    ],
-  },
 ];
 
 export const datasListBlogs: BlogPost[] = [
