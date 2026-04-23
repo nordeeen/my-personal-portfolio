@@ -24,13 +24,25 @@ export interface SkillItem {
   name: string;
 }
 
-export interface ProjectItem {
-  id: number;
-  title: string;
-  imgBg: string;
-  linkPort: string;
-  linkGithub: string;
-}
+export type ProjectItem =
+  | {
+      type: 'public';
+      id: number;
+      title: string;
+      imgBg: string;
+      description?: string;
+      techStack: string[];
+      linkPort: string;
+      linkGithub: string;
+    }
+  | {
+      type: 'confidential';
+      id: number;
+      title: string;
+      imgBg: string;
+      description?: string;
+      techStack: string[];
+    };
 
 export const allDataWords = {
   titlesOne: 'About Me',
@@ -61,7 +73,7 @@ export const allDataWords = {
 export const datasListExp: ExperienceItem[] = [
   {
     id: 1,
-    date: 'April 2024 - Present',
+    date: 'April 2024 - March 2026',
     subjects: [
       'React.js',
       'Next.js',
@@ -174,45 +186,88 @@ export const datasListSkills: SkillItem[] = [
 export const datasListProjects: ProjectItem[] = [
   {
     id: 1,
+    type: 'public',
+    title: 'MasakApa — AI Recipe Finder',
+    imgBg: '/assets/masakapa-screen.png',
+    linkPort: 'https://masakapa-app.vercel.app/',
+    linkGithub: 'https://github.com/nordeeen/Masak-Apa-App',
+    techStack: [
+      'Next.js',
+      'Tailwind CSS',
+      'GenAI Gemini',
+      'Zustand',
+      'Typescript',
+    ],
+  },
+  {
+    id: 2,
+    type: 'public',
     title: 'OrderMeals',
     imgBg: '/assets/food-order.png',
     linkPort: 'https://food-order-lake.vercel.app/',
     linkGithub: 'https://github.com/nordeeen/Food-Order-App',
+    techStack: ['React', 'Tailwind', 'API'],
   },
   {
-    id: 2,
+    id: 3,
+    type: 'public',
     title: 'Natours Travel',
     imgBg: '/assets/natours-travel.png',
     linkPort: 'https://natours-travel-landing-page.netlify.app/',
     linkGithub: 'https://github.com/nordeeen/Landing-Page-Travel-Natours',
-  },
-  {
-    id: 3,
-    title: 'EPL Football Web',
-    imgBg: '/assets/epl-web.png',
-    linkPort: 'https://gibol.netlify.app/',
-    linkGithub: 'https://github.com/nordeeen/Gibol-web-app',
+    techStack: ['HTML', 'CSS', 'JS'],
   },
   {
     id: 4,
+    type: 'public',
     title: 'Landing Page LaslesVPN',
     imgBg: '/assets/lp-laslesvpn.png',
     linkPort: 'https://landingpage-lasles-vpn.vercel.app/',
     linkGithub: 'https://github.com/nordeeen/Landingpage-LaslesVPN',
+    techStack: ['HTML', 'CSS'],
   },
   {
     id: 5,
-    title: 'Users Login Page',
-    imgBg: '/assets/users-login.png',
-    linkPort: 'https://users-login-web.vercel.app/',
-    linkGithub: 'https://github.com/nordeeen/Users-login-web',
-  },
-  {
-    id: 6,
+    type: 'public',
     title: 'Yuk Travel Web',
     imgBg: '/assets/yuktravel.png',
     linkPort: 'https://web-travel-gules.vercel.app/',
     linkGithub: 'https://github.com/nordeeen/Web-Travel',
+    techStack: ['React', 'Tailwind'],
+  },
+  {
+    id: 6,
+    type: 'confidential',
+    title: 'Internal Dashboard',
+    imgBg: '/assets/dashboard-dpps.png',
+    techStack: ['React.js', 'Chakra UI', 'Redux Toolkit', 'Sass', 'Jest'],
+  },
+  {
+    id: 7,
+    type: 'confidential',
+    title: 'Internal Dashboard',
+    imgBg: '/assets/dashboard-ktadbrnr.png',
+    techStack: [
+      'Next.js',
+      'Tailwind CSS',
+      'Tanstack Query',
+      'Zustand',
+      'Typescript',
+    ],
+  },
+  {
+    id: 8,
+    type: 'confidential',
+    title: 'Internal Dashboard',
+    imgBg: '/assets/dashboard-mbg.png',
+    techStack: [
+      'Next.js',
+      'Tanstack Query',
+      'Micro Frontend',
+      'Typescript',
+      'Tailwind',
+      'Zustand',
+    ],
   },
 ];
 
@@ -225,7 +280,7 @@ export const datasListBlogs: BlogPost[] = [
     category: 'React / Next.js',
     categoryColor: 'blue',
     readTime: '8 menit baca',
-    date: '2025-02-01',
+    date: '2026-02-01',
     sections: [
       {
         type: 'h2',
@@ -342,7 +397,7 @@ export const datasListBlogs: BlogPost[] = [
     category: 'JavaScript / TypeScript',
     categoryColor: 'blue-ts',
     readTime: '10 menit baca',
-    date: '2025-02-05',
+    date: '2026-02-05',
     sections: [
       {
         type: 'h2',
@@ -423,7 +478,7 @@ export const datasListBlogs: BlogPost[] = [
     category: 'CSS Modern',
     categoryColor: 'pink',
     readTime: '9 menit baca',
-    date: '2025-02-08',
+    date: '2026-02-08',
     sections: [
       {
         type: 'h2',
@@ -483,7 +538,7 @@ export const datasListBlogs: BlogPost[] = [
     category: 'Performance & Optimization',
     categoryColor: 'green',
     readTime: '11 menit baca',
-    date: '2025-02-11',
+    date: '2026-02-11',
     sections: [
       {
         type: 'h2',
@@ -552,7 +607,7 @@ export const datasListBlogs: BlogPost[] = [
     category: 'CSS Modern',
     categoryColor: 'pink',
     readTime: '9 menit baca',
-    date: '2025-02-14',
+    date: '2026-02-14',
     sections: [
       {
         type: 'h2',
@@ -612,7 +667,7 @@ export const datasListBlogs: BlogPost[] = [
     category: 'React / Next.js',
     categoryColor: 'blue',
     readTime: '12 menit baca',
-    date: '2025-02-17',
+    date: '2026-02-17',
     sections: [
       {
         type: 'h2',
@@ -672,7 +727,7 @@ export const datasListBlogs: BlogPost[] = [
     category: 'JavaScript / TypeScript',
     categoryColor: 'yellow',
     readTime: '8 menit baca',
-    date: '2025-02-20',
+    date: '2026-02-20',
     sections: [
       {
         type: 'h2',

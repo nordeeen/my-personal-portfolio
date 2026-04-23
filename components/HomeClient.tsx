@@ -1,0 +1,34 @@
+'use client';
+
+import { useEffect } from 'react';
+import AOS from 'aos';
+import Navbar from '@/components/Navbar';
+import Home from '@/components/Home';
+import About from '@/components/About';
+import Skills from '@/components/Skills';
+import Award from '@/components/Award';
+import Work from '@/components/Work';
+import Exprience from '@/components/Exprience';
+import Blogs from '@/components/Blogs';
+import Contact from '@/components/Contact';
+
+export default function HomeClient() {
+  useEffect(() => {
+    AOS.init({ disable: 'mobile' });
+    AOS.refresh();
+  }, []);
+
+  return (
+    <>
+      <Navbar />
+      <Home />
+      <About />
+      <Exprience />
+      <Skills />
+      <Work />
+      <Award />
+      <Blogs />
+      <Contact />
+    </>
+  );
+}
