@@ -82,7 +82,7 @@ export const datasListExp: ExperienceItem[] = [
       'Zustand',
       'TanStack Query',
     ],
-    title: 'Front-End Developer — PT Kreasindo Karya Abadi',
+    title: 'Front-End Developer — Mycloudindo',
     description: [
       'Developed, tested, and maintained program code to ensure functionality, performance, and high code quality.',
       'Identified, debugged, and resolved errors across the codebase to minimize downtime and improve system stability.',
